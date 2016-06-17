@@ -1,0 +1,26 @@
+{
+  "name": "sf-owner",
+  "version": "1.0.0",
+  "description": "SalesFunnel Owner table",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-react": "6.5.0",
+    "babelify": "7.3.0",
+    "react": "15.1.0",
+    "react-dom": "15.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalesFunnel/SF-OWNER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalesFunnel/SF-OWNER/issues"
+  },
+  "homepage": "https://github.com/SalesFunnel/SF-OWNER#readme"
+}
