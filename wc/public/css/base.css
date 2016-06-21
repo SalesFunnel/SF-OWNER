@@ -97,6 +97,17 @@ ul {
   width: 95%;
 }
 
+#the-one {
+  text-align: center;
+}
+
+#the-one button {
+  width: 200px;
+  height: 60px;
+  font-size: 21px;
+  color: red;
+}
+
 table, th, td {
   width: 5%;
   padding: 5px;

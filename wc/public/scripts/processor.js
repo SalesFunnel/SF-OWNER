@@ -27,6 +27,7 @@
         var task = data[0].task.split(", ");
         data.shift();
 
+        ct.groupMemberNameArr = member;
         return {
             memberTask: getMemberTask(data, member, task),
             member: member,

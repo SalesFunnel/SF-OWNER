@@ -5,6 +5,18 @@
  *      --
  */
 var Report = React.createClass({
+    handleClick: function(){
+        var rV = Math.random() * 1000;
+        var intV = parseInt(rV);
+        var value = intV + 1;
+
+        var groupMemberCount = ct.groupMemberNameArr.length;
+        for(var i = 0; i < value; i++){
+            var theOne = ct.groupMemberNameArr[(i % groupMemberCount)];
+            $("#the-one-result").text(theOne);
+
+        }
+    },
     render: function() {
         var title = "", memberTasks = "";
 
@@ -44,166 +56,10 @@ var Report = React.createClass({
                         {memberTasks}
                     </table>
                 </div>
-            </div>
-        );
-    }
-});
-
-var Summary = React.createClass({
-    render: function() {
-        var startValue = '', endValue = '', total = '', nodes = [];
-        if (this.props.data.constructor != Array) {
-            startValue = this.props.data.steps.startValue;
-            endValue = this.props.data.steps.endValue;
-            total = this.props.data.summary.total;
-
-            nodes = this.props.data.summary.stage.map(function(stage) {
-                return (
-                    <li>
-                        {stage.name + ' : ' + stage.value}
-                    </li>
-                );
-            });
-        }
-
-        return (
-            <div className="Summary">
-                <span>from: </span>
-                <strong>{startValue}</strong>
-                <span> to: </span>
-                <strong>{endValue}</strong>
-                <p>Total: {total}</p>
-                <ul>
-                    {nodes}
-                </ul>
-            </div>
-        );
-    }
-});
-
-var Cycles = React.createClass({
-    render: function() {
-        function getStages(stages){
-            return stages.map(function(stage) {
-                return (
-                    <li>
-                        {stage.name + ' : ' + stage.value}
-                    </li>
-                );
-            });
-        };
-
-        function getCycles(cycles){
-            return cycles.map(function(cycle) {
-                var nodes = getStages(cycle.stage);
-                var detail = {};
-                if (cycle.detail && cycle.detail.length > 0){
-                    detail = cycle.detail[0];
-                }
-
-                return (
-                    <div>
-                        <a href={cycle.link} target='_blank'>{cycle.number}</a>
-                        <span>:   <strong>{cycle.duration}</strong> days:  </span>
-                        <span>{cycle.name}</span>
-
-                        <div>
-                            <span><strong>Stream</strong>: {detail.stream}</span>
-                            <span>  </span>
-                            <span><strong>Size</strong>: {detail.size}</span>
-                            <span>  </span>
-                            <span><strong>Own1</strong>: {detail.own1}</span>
-                            <span>  </span>
-                            <span><strong>Own2</strong>: {detail.own2}</span>
-                            <span>  </span>
-                            <span><strong>Completed Date</strong>: {detail.completedDate}</span>
-                            <span>  </span>
-                        </div>
-
-                        <ul>{nodes}</ul>
-
-                        <div id="detail-editor">
-                            <textarea id={cycle.number} name="textarea" rows="10" cols="50" defaultValue="2: Input static story HTML source here"></textarea>
-                        </div>
-                    </div>
-                );
-            });
-        };
-
-        var cycles = '';
-        if (this.props.data.constructor != Array) {
-            cycles = getCycles(this.props.data.stories);
-        }
-
-        return (
-            <div className="Cycles">
-                {cycles}
-            </div>
-        );
-    }
-});
-
-var Tool = React.createClass({
-    getInitialState: function() {
-        return {data: []};
-    },
-    componentDidMount: function () {
-        $('#analyse-detail-button').click(function () {
-            var detailTextArea = $('#detail-editor textarea');
-            var details = $.map(detailTextArea, function(textarea) {
-                var key = $(textarea).attr('id');
-                var value = $(textarea).val();
-                return {
-                    id: key,
-                    html: value
-                };
-            });
-            var storyDetail = ct.analyzeDetail(details);
-            var mergedData = ct.mergeDetail(this.state.data, storyDetail);
-
-            this.setState({data: mergedData}, null);
-            this.props.onReportUpdate(mergedData);
-        }.bind(this));
-
-        $('#analyse-button').click(function(){
-            var htmlSourceStr = $('#editor textarea:first').val();
-            var result = ct.analyze(htmlSourceStr);
-
-            this.setState({data: result}, null);
-            this.props.onReportUpdate(result);
-        }.bind(this));
-
-        $('#save-button').click(function(){
-            var paras = {data: this.state.data};
-            var reportName = $('input#name').val();
-            var pairNumber = $('input#pair').val();
-            if(!reportName || !pairNumber){
-                alert('Report Name and Dev Pair are required.');
-                return;
-            }
-
-            paras.reportName = reportName;
-            paras.pairNumber = pairNumber;
-            this.props.onReportSubmit(paras);
-        }.bind(this));
-    },
-    render: function () {
-        return (
-            <div id="tool">
-                <h2>Tool</h2>
-                <button id="analyse-button">1: Analyse</button>
-                <button id="analyse-detail-button">2: Analyse Detail</button>
-                <button id="save-button">3: Save Report</button>
-
-                <div id="editor">
-                    <textarea name="textarea" rows="10" cols="50" defaultValue="1: Input static mingle cycle time HTML source here"></textarea>
+                <div id="the-one">
+                    <h2 id="the-one-result"></h2>
+                    <button onClick={this.handleClick}> Who is the One? </button>
                 </div>
-                <div id="result">
-                    <h3>Analyse Result:</h3>
-                    <Summary data={this.state.data} />
-                    <Cycles data={this.state.data} />
-                </div>
-
             </div>
         );
     }
