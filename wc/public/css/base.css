@@ -94,11 +94,14 @@ ul {
   border-collapse: collapse;
   border-spacing: 0px;
   display: inline-block;
+  width: 95%;
 }
 
 table, th, td {
+  width: 5%;
   padding: 5px;
   border: 1px solid black;
+  text-align: center;
 }
 
 textarea {

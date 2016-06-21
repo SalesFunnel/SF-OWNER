@@ -1,23 +1,23 @@
 [
   {
-    "member": "SunWei, GuChao, XuFei",
+    "member": "Wayde, Ting, Pupi, Rita, Eva, Xufei, Chao, Kuang, Chintan",
     "task": "Retro, Ticket, Feedback, Workshop, CycleTime"
   },
   {
     "id": 18585858,
-    "name": "SunWei",
+    "name": "Wayde",
     "action": "Retro",
     "time": "2016-06-06"
   },
   {
     "id": 18585859,
-    "name": "GuChao",
+    "name": "Ting",
     "action": "Ticket",
     "time": "2016-06-06"
   },
   {
     "id": 18585860,
-    "name": "SunWei",
+    "name": "Pupi",
     "action": "Retro",
     "time": "2016-06-07"
   }
