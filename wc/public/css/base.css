@@ -105,7 +105,29 @@ ul {
   width: 200px;
   height: 60px;
   font-size: 21px;
-  color: red;
+  color: orangered;
+}
+
+#the-one-result ul {
+  height: 150px;
+}
+
+.item {
+  display: block;
+  background: lightseagreen;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+  margin:10px;
+  font-size: 24px;
+  color: white;
+}
+
+.active {
+  background: antiquewhite;
+  color: lightseagreen;
 }
 
 table, th, td {

@@ -5,18 +5,6 @@
  *      --
  */
 var Report = React.createClass({
-    handleClick: function(){
-        var rV = Math.random() * 1000;
-        var intV = parseInt(rV);
-        var value = intV + 1;
-
-        var groupMemberCount = ct.groupMemberNameArr.length;
-        for(var i = 0; i < value; i++){
-            var theOne = ct.groupMemberNameArr[(i % groupMemberCount)];
-            $("#the-one-result").text(theOne);
-
-        }
-    },
     render: function() {
         var title = "", memberTasks = "";
 
@@ -56,35 +44,53 @@ var Report = React.createClass({
                         {memberTasks}
                     </table>
                 </div>
-                <div id="the-one">
-                    <h2 id="the-one-result"></h2>
-                    <button onClick={this.handleClick}> Who is the One? </button>
-                </div>
+                <PrizePool />
             </div>
         );
     }
 });
 
-var Menu = React.createClass({
-    handleClick: function(report){
-        this.props.onMenuItemClicked(report);
+var PrizePool = React.createClass({
+    handleClick: function(){
+        var groupMemberCount = ct.groupMemberNameArr.length;
+
+        var rand = 0
+        var preNum;
+        ct.isRun = true;
+        ct.tx = setInterval(function () {
+            if (ct.isRun) {
+                while (true) {
+                    rand = parseInt(Math.random() * 1000) % groupMemberCount;
+                    if (rand != preNum) {
+                        break;
+                    }
+                }
+                preNum = rand;
+                $(".item.active").removeClass("active");
+                $("li.item").eq(rand).addClass("active");
+            }
+        }, 50);
+
+        ct.stopTx = setTimeout(function () {
+            ct.isRun = false;
+        }, 3000);
     },
     render: function () {
-        var reports = ct.sortById(this.props.data).map(function(report) {
-            return (
-                <li>
-                    <a id={report.id} href='#'
-                       onClick={this.handleClick.bind(this, report)}>
-                        {report.name} - {report.pair}
-                    </a>
-                </li>
-            );
-        }.bind(this));
+        var member = '';
+        if(ct.groupMemberNameArr && ct.groupMemberNameArr.length > 0) {
+            member = ct.groupMemberNameArr.map(function (name) {
+                return (
+                    <li className="item" id={name}>{name}</li>
+                );
+            });
+        }
 
         return (
-            <div id="menu">
-                <h2>Menu</h2>
-                <ul>{reports}</ul>
+            <div id="the-one">
+                <div id="the-one-result">
+                    <ul>{member}</ul>
+                </div>
+                <button onClick={this.handleClick}> Who is the One?</button>
             </div>
         );
     }
