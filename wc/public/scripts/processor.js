@@ -82,4 +82,21 @@
         return list.sort(sortByName);
     };
 
+    ct.playRunningMusic = function(){
+        var runningMusic = document.getElementById("runingmic");
+        runningMusic.volume = 0.5;
+        runningMusic.currentTime = 0;
+        runningMusic.play();
+    };
+
+    ct.playPauseMusic = function(){
+        var runningMusic = document.getElementById("runingmic");
+        runningMusic.pause();
+
+        var pauseMusic=document.getElementById("pausemic");
+        pauseMusic.volume=1.0;
+        pauseMusic.currentTime = 0;
+        pauseMusic.play();
+    };
+
 })(window.ct = window.ct || {})

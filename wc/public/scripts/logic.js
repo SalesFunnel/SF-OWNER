@@ -57,6 +57,8 @@ var PrizePool = React.createClass({
         var rand = 0
         var preNum;
         ct.isRun = true;
+        ct.playRunningMusic();
+
         ct.tx = setInterval(function () {
             if (ct.isRun) {
                 while (true) {
@@ -73,6 +75,7 @@ var PrizePool = React.createClass({
 
         ct.stopTx = setTimeout(function () {
             ct.isRun = false;
+            ct.playPauseMusic();
         }, 3000);
     },
     render: function () {
