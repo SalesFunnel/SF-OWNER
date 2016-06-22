@@ -130,6 +130,21 @@ ul {
   color: lightseagreen;
 }
 
+.plus {
+  width: 30px;
+  height: 20px;
+  display: none;
+  margin: 0 8px;
+}
+
+td:hover {
+  background-color: bisque;
+}
+
+td:hover button {
+  display: inline-block;
+}
+
 table, th, td {
   width: 5%;
   padding: 5px;

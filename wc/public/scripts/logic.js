@@ -5,6 +5,9 @@
  *      --
  */
 var Report = React.createClass({
+    handleClick: function(name, action){
+        console.log(name + action);
+    },
     render: function() {
         var title = "", memberTasks = "";
 
@@ -17,10 +20,14 @@ var Report = React.createClass({
                 );
             });
 
+            var me = this;
             function getTasksByName(name){
                 return data.task.map(function(action){
                     return (
-                        <td>{data.memberTask[name][action].length}</td>
+                        <td>
+                            {data.memberTask[name][action].length}
+                            <button className="plus" onClick={me.handleClick.bind(this, name, action)}>+</button>
+                        </td>
                     );
                 });
             };
