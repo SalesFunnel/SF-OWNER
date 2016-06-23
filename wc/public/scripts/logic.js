@@ -6,12 +6,19 @@
  */
 var Report = React.createClass({
     handleClick: function(name, action){
+        var me = this;
+        var time = new Date().format("yyyy-MM-dd HH:mm:ss");
+        var content = "Add " + action + " one more time for " + name + " at " + time + "?";
         dialog({
             title: 'Information Confirmed',
-            content: "?????ssssss",
+            content: content,
             okValue: 'Sure',
             ok: function () {
-                alert("bababa");
+                me.props.onReportSubmit({
+                    name: name,
+                    action: action,
+                    date: time
+                });
             },
         }).show(document.getElementById(name+action));
     },
@@ -116,19 +123,10 @@ var PrizePool = React.createClass({
 
 var CTBox = React.createClass({
     handleReportSubmit: function (report) {
-        ct.saveReport(report, function(data){
-            this.setState({menu: data}, null);
-        }.bind(this));
-    },
-    handleReportUpdate: function (report) {
-        this.setState({data:report}, null);
-    },
-    handleMenuItemClicked: function (report) {
-        var reportData = JSON.parse(report.data);
-        reportData.name = report.name;
-        reportData.id = report.id;
-        reportData.pair = report.pair;
-        this.setState({data:reportData}, null);
+        alert(report);
+        //ct.saveReport(report, function(data){
+        //    this.setState({menu: data}, null);
+        //}.bind(this));
     },
     getInitialState: function () {
         return {data: []};
@@ -143,7 +141,8 @@ var CTBox = React.createClass({
             <div className="CTBox">
                 <h1>Sales Funnel Owner Table</h1>
                 <div id="report">
-                    <Report data={this.state.data} />
+                    <Report data={this.state.data}
+                            onReportSubmit={this.handleReportSubmit}/>
                 </div>
             </div>
         );
