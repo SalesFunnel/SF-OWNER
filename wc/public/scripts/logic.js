@@ -6,7 +6,14 @@
  */
 var Report = React.createClass({
     handleClick: function(name, action){
-        console.log(name + action);
+        dialog({
+            title: 'Information Confirmed',
+            content: "?????ssssss",
+            okValue: 'Sure',
+            ok: function () {
+                alert("bababa");
+            },
+        }).show(document.getElementById(name+action));
     },
     render: function() {
         var title = "", memberTasks = "";
@@ -23,10 +30,11 @@ var Report = React.createClass({
             var me = this;
             function getTasksByName(name){
                 return data.task.map(function(action){
+                    var uniqueId = name + action;
                     return (
                         <td>
                             {data.memberTask[name][action].length}
-                            <button className="plus" onClick={me.handleClick.bind(this, name, action)}>+</button>
+                            <button id={uniqueId} className="plus" onClick={me.handleClick.bind(this, name, action)}>+</button>
                         </td>
                     );
                 });

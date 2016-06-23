@@ -145,7 +145,7 @@ td:hover button {
   display: inline-block;
 }
 
-table, th, td {
+#content th, #content td {
   width: 5%;
   padding: 5px;
   border: 1px solid black;
@@ -154,11 +154,4 @@ table, th, td {
 
 textarea {
   width: 100%;
-}
-
-button {
-  margin: 8px;
-  width: 100px;
-  height: 25px;
-  cursor: pointer;
 }
