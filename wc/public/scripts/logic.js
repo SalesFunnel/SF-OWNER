@@ -17,7 +17,7 @@ var Report = React.createClass({
                 me.props.onReportSubmit({
                     name: name,
                     action: action,
-                    date: time
+                    time: time
                 });
             },
         }).show(document.getElementById(name+action));
@@ -38,10 +38,16 @@ var Report = React.createClass({
             function getTasksByName(name){
                 return data.task.map(function(action){
                     var uniqueId = name + action;
+                    var count = data.memberTask[name][action].length;
+                    var latestTime = '';
+                    if(count > 0) {
+                        latestTime = data.memberTask[name][action][count - 1]["time"];
+                    }
                     return (
                         <td>
-                            {data.memberTask[name][action].length}
+                            {count}
                             <button id={uniqueId} className="plus" onClick={me.handleClick.bind(this, name, action)}>+</button>
+                            <p>{latestTime}</p>
                         </td>
                     );
                 });
@@ -123,10 +129,9 @@ var PrizePool = React.createClass({
 
 var CTBox = React.createClass({
     handleReportSubmit: function (report) {
-        alert(report);
-        //ct.saveReport(report, function(data){
-        //    this.setState({menu: data}, null);
-        //}.bind(this));
+        ct.saveReport(report, function(data){
+            this.setState({data: data}, null);
+        }.bind(this));
     },
     getInitialState: function () {
         return {data: []};

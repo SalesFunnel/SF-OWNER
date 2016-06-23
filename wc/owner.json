@@ -1,24 +1,6 @@
 [
-  {
-    "member": "Ting, Pupi, Rita, Eva, Wayde, Xufei, Chao, Kuang, Chintan",
-    "task": "Retro, Ticket, Feedback, Workshop, CycleTime, CodeReview, Session, NewbieGuide"
-  },
-  {
-    "id": 18585858,
-    "name": "Wayde",
-    "action": "Retro",
-    "time": "2016-06-06"
-  },
-  {
-    "id": 18585859,
-    "name": "Ting",
-    "action": "Ticket",
-    "time": "2016-06-06"
-  },
-  {
-    "id": 18585860,
-    "name": "Pupi",
-    "action": "Retro",
-    "time": "2016-06-07"
-  }
+    {
+        "member": "Ting, Pupi, Rita, Eva, Wayde, Xufei, Chao, Kuang, Chintan",
+        "task": "Retro, Ticket, Feedback, Workshop, CycleTime, CodeReview, Session, NewbieGuide"
+    }
 ]

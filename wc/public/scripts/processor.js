@@ -39,9 +39,9 @@
     ct.saveReport = function (data, cb) {
 
         var stringifyReport = {
-            name: data.reportName,
-            pair: data.pairNumber,
-            data: JSON.stringify(data.data)
+            name: data.name,
+            action: data.action,
+            time: data.time
         };
 
         $.ajax({
