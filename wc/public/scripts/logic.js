@@ -28,6 +28,10 @@ var Report = React.createClass({
         if (this.props.data.length > 0) {
             var data = ct.analyze(this.props.data);
 
+            var sorted = ct.getRanking(data);
+            document.getElementById("ranking").innerHTML =
+                "SalesFunnel Owner Table 排行榜：" + sorted.join("   ");
+
             title = [[" "], data.task].join().split(',').map(function (title) {
                 return (
                     <th>{title}</th>

@@ -99,6 +99,24 @@
         pauseMusic.play();
     };
 
+    ct.getRanking = function(data){
+        var memberTask = data.memberTask;
+        var ranking = [];
+
+        Object.keys(memberTask).forEach(function (name) {
+            var memberHash = memberTask[name];
+            var taskRecordTimes = 0;
+
+            Object.keys(memberHash).forEach(function (task){
+                taskRecordTimes += memberHash[task].length;
+            });
+
+            ranking.push(taskRecordTimes + ":" + name);
+        });
+
+        return ranking.sort().reverse();
+    };
+
 })(window.ct = window.ct || {})
 
 Date.prototype.format = function (fmt) {
