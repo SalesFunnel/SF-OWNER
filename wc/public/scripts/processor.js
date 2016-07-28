@@ -114,7 +114,19 @@
             ranking.push(taskRecordTimes + ":" + name);
         });
 
-        return ranking.sort().reverse();
+        return ranking.sort(function (val1, val2)
+            {
+                var temp1 = parseInt(val1.split(":")[0]);
+                var temp2 = parseInt(val2.split(":")[0]);
+                if (temp1 < temp2) {
+                    return -1;
+                } else if (temp1 == temp2) {
+                    return 0;
+                } else {
+                    return 1;
+                }
+            }
+        ).reverse();
     };
 
 })(window.ct = window.ct || {})
