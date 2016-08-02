@@ -14,7 +14,9 @@
     function getMemberTask(actions, member, task) {
         var memberTask = initMemberActions(member, task);
         $.each(actions, function (index, action) {
-            memberTask[action.name][action.action].push(action);
+            if (memberTask[action.name]) {
+                memberTask[action.name][action.action].push(action);
+            }
         });
 
         return memberTask;

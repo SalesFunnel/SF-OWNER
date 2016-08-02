@@ -1,6 +1,6 @@
 [
   {
-    "member": "Ting, Pupi, Rita, Eva, Wayde, Xufei, Chao, Jane, ChenYu, TianYi, Kuang, Chintan",
+    "member": "Ting, Pupi, Rita, Eva, Wayde, Xufei, Chao, Jane, ChenYu, TianYi, Jill, Jiang",
     "task": "Retro, Ticket, Feedback, Workshop, CycleTime, CodeReview, Session, NewbieGuide, MingleSync"
   },
   {
@@ -248,5 +248,41 @@
     "name": "Chao",
     "action": "Session",
     "time": "2016-07-28 16:39:56"
+  },
+  {
+    "id": 1470014757305,
+    "name": "Jane",
+    "action": "MingleSync",
+    "time": "2016-08-01 09:25:58"
+  },
+  {
+    "id": 1470016142868,
+    "name": "Jane",
+    "action": "Ticket",
+    "time": "2016-08-01 09:49:00"
+  },
+  {
+    "id": 1470016146514,
+    "name": "TianYi",
+    "action": "Ticket",
+    "time": "2016-08-01 09:49:05"
+  },
+  {
+    "id": 1470107069404,
+    "name": "Ting",
+    "action": "Session",
+    "time": "2016-08-02 11:04:25"
+  },
+  {
+    "id": 1470110235176,
+    "name": "ChenYu",
+    "action": "Session",
+    "time": "2016-08-02 11:57:13"
+  },
+  {
+    "id": 1470124526277,
+    "name": "Chao",
+    "action": "Session",
+    "time": "2016-08-02 15:55:23"
   }
 ]
