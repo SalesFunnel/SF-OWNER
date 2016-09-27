@@ -1,288 +1,510 @@
 [
-  {
-    "member": "Ting, Pupi, Rita, Eva, Wayde, Xufei, Chao, Jane, ChenYu, TianYi, Jill, Jiang",
-    "task": "Retro, Ticket, Feedback, Workshop, CycleTime, CodeReview, Session, NewbieGuide, MingleSync"
-  },
-  {
-    "id": 1466663000654,
-    "name": "Pupi",
-    "action": "Ticket",
-    "time": "2016-06-23 14:23:18"
-  },
-  {
-    "id": 1466663023768,
-    "name": "Eva",
-    "action": "Ticket",
-    "time": "2016-06-23 14:23:42"
-  },
-  {
-    "id": 1466663613018,
-    "name": "Wayde",
-    "action": "CycleTime",
-    "time": "2016-06-23 14:33:26"
-  },
-  {
-    "id": 1466664372468,
-    "name": "Ting",
-    "action": "Feedback",
-    "time": "2016-06-23 14:46:10"
-  },
-  {
-    "id": 1466738098437,
-    "name": "Xufei",
-    "action": "CodeReview",
-    "time": "2016-06-24 11:14:56"
-  },
-  {
-    "id": 1466993314925,
-    "name": "Xufei",
-    "action": "Ticket",
-    "time": "2016-06-27 10:08:42"
-  },
-  {
-    "id": 1466997455541,
-    "name": "Xufei",
-    "action": "CodeReview",
-    "time": "2016-06-27 11:17:40"
-  },
-  {
-    "id": 1467259615609,
-    "name": "Ting",
-    "action": "Session",
-    "time": "2016-06-30 12:07:21"
-  },
-  {
-    "id": 1467259627138,
-    "name": "Rita",
-    "action": "Session",
-    "time": "2016-06-30 12:07:33"
-  },
-  {
-    "id": 1467259631121,
-    "name": "Pupi",
-    "action": "Session",
-    "time": "2016-06-30 12:07:37"
-  },
-  {
-    "id": 1467259636256,
-    "name": "Wayde",
-    "action": "Session",
-    "time": "2016-06-30 12:07:42"
-  },
-  {
-    "id": 1467259641138,
-    "name": "Xufei",
-    "action": "Session",
-    "time": "2016-06-30 12:07:46"
-  },
-  {
-    "id": 1467259646460,
-    "name": "Kuang",
-    "action": "Session",
-    "time": "2016-06-30 12:07:52"
-  },
-  {
-    "id": 1467259649732,
-    "name": "Chintan",
-    "action": "Session",
-    "time": "2016-06-30 12:07:55"
-  },
-  {
-    "id": 1467597471942,
-    "name": "Eva",
-    "action": "Ticket",
-    "time": "2016-07-04 09:57:50"
-  },
-  {
-    "id": 1467599267505,
-    "name": "Jane",
-    "action": "NewbieGuide",
-    "time": "2016-07-04 10:27:45"
-  },
-  {
-    "id": 1467858461005,
-    "name": "Eva",
-    "action": "Session",
-    "time": "2016-07-07 10:27:41"
-  },
-  {
-    "id": 1467858466479,
-    "name": "Xufei",
-    "action": "Session",
-    "time": "2016-07-07 10:27:47"
-  },
-  {
-    "id": 1467861537744,
-    "name": "Pupi",
-    "action": "Session",
-    "time": "2016-07-07 11:18:57"
-  },
-  {
-    "id": 1468316188809,
-    "name": "Chao",
-    "action": "Ticket",
-    "time": "2016-07-12 17:36:27"
-  },
-  {
-    "id": 1468318783034,
-    "name": "Jane",
-    "action": "Retro",
-    "time": "2016-07-12 18:19:42"
-  },
-  {
-    "id": 1468478616001,
-    "name": "Wayde",
-    "action": "CycleTime",
-    "time": "2016-07-14 14:43:33"
-  },
-  {
-    "id": 1468478766008,
-    "name": "Wayde",
-    "action": "Workshop",
-    "time": "2016-07-14 14:46:03"
-  },
-  {
-    "id": 1468478780562,
-    "name": "Xufei",
-    "action": "CodeReview",
-    "time": "2016-07-14 14:46:17"
-  },
-  {
-    "id": 1468809996058,
-    "name": "Wayde",
-    "action": "MingleSync",
-    "time": "2016-07-18 10:46:35"
-  },
-  {
-    "id": 1468810010612,
-    "name": "Pupi",
-    "action": "Ticket",
-    "time": "2016-07-18 10:46:51"
-  },
-  {
-    "id": 1469175472467,
-    "name": "Xufei",
-    "action": "CycleTime",
-    "time": "2016-07-22 16:17:51"
-  },
-  {
-    "id": 1469181711045,
-    "name": "Jane",
-    "action": "Session",
-    "time": "2016-07-22 18:01:49"
-  },
-  {
-    "id": 1469181719052,
-    "name": "Eva",
-    "action": "Session",
-    "time": "2016-07-22 18:01:57"
-  },
-  {
-    "id": 1469181737878,
-    "name": "Chao",
-    "action": "MingleSync",
-    "time": "2016-07-22 18:02:16"
-  },
-  {
-    "id": 1469501948267,
-    "name": "Ting",
-    "action": "Session",
-    "time": "2016-07-26 10:59:05"
-  },
-  {
-    "id": 1469503289159,
-    "name": "Xufei",
-    "action": "CodeReview",
-    "time": "2016-07-26 11:21:26"
-  },
-  {
-    "id": 1469503737692,
-    "name": "Eva",
-    "action": "Session",
-    "time": "2016-07-26 11:28:55"
-  },
-  {
-    "id": 1469503742547,
-    "name": "Jane",
-    "action": "Session",
-    "time": "2016-07-26 11:29:00"
-  },
-  {
-    "id": 1469503765660,
-    "name": "Rita",
-    "action": "Ticket",
-    "time": "2016-07-26 11:29:23"
-  },
-  {
-    "id": 1469503775575,
-    "name": "Jane",
-    "action": "Ticket",
-    "time": "2016-07-26 11:29:34"
-  },
-  {
-    "id": 1469588598553,
-    "name": "Xufei",
-    "action": "Session",
-    "time": "2016-07-27 11:03:19"
-  },
-  {
-    "id": 1469588609517,
-    "name": "Ting",
-    "action": "Retro",
-    "time": "2016-07-27 11:03:30"
-  },
-  {
-    "id": 1469588709955,
-    "name": "ChenYu",
-    "action": "NewbieGuide",
-    "time": "2016-07-27 11:05:10"
-  },
-  {
-    "id": 1469687240560,
-    "name": "Xufei",
-    "action": "CodeReview",
-    "time": "2016-07-28 14:27:13"
-  },
-  {
-    "id": 1469695198635,
-    "name": "Chao",
-    "action": "Session",
-    "time": "2016-07-28 16:39:56"
-  },
-  {
-    "id": 1470014757305,
-    "name": "Jane",
-    "action": "MingleSync",
-    "time": "2016-08-01 09:25:58"
-  },
-  {
-    "id": 1470016142868,
-    "name": "Jane",
-    "action": "Ticket",
-    "time": "2016-08-01 09:49:00"
-  },
-  {
-    "id": 1470016146514,
-    "name": "TianYi",
-    "action": "Ticket",
-    "time": "2016-08-01 09:49:05"
-  },
-  {
-    "id": 1470107069404,
-    "name": "Ting",
-    "action": "Session",
-    "time": "2016-08-02 11:04:25"
-  },
-  {
-    "id": 1470110235176,
-    "name": "ChenYu",
-    "action": "Session",
-    "time": "2016-08-02 11:57:13"
-  },
-  {
-    "id": 1470124526277,
-    "name": "Chao",
-    "action": "Session",
-    "time": "2016-08-02 15:55:23"
-  }
+    {
+        "member": "Ting, Rita, Eva, Wayde, Xufei, Chao, Jane, ChenYu, TianYi, Jill, Jiang, Mei",
+        "task": "Retro, Ticket, Feedback, Workshop, CycleTime, CodeReview, Session, NewbieGuide, MingleSync"
+    },
+    {
+        "id": 1466663000654,
+        "name": "Pupi",
+        "action": "Ticket",
+        "time": "2016-06-23 14:23:18"
+    },
+    {
+        "id": 1466663023768,
+        "name": "Eva",
+        "action": "Ticket",
+        "time": "2016-06-23 14:23:42"
+    },
+    {
+        "id": 1466663613018,
+        "name": "Wayde",
+        "action": "CycleTime",
+        "time": "2016-06-23 14:33:26"
+    },
+    {
+        "id": 1466664372468,
+        "name": "Ting",
+        "action": "Feedback",
+        "time": "2016-06-23 14:46:10"
+    },
+    {
+        "id": 1466738098437,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-06-24 11:14:56"
+    },
+    {
+        "id": 1466993314925,
+        "name": "Xufei",
+        "action": "Ticket",
+        "time": "2016-06-27 10:08:42"
+    },
+    {
+        "id": 1466997455541,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-06-27 11:17:40"
+    },
+    {
+        "id": 1467259615609,
+        "name": "Ting",
+        "action": "Session",
+        "time": "2016-06-30 12:07:21"
+    },
+    {
+        "id": 1467259627138,
+        "name": "Rita",
+        "action": "Session",
+        "time": "2016-06-30 12:07:33"
+    },
+    {
+        "id": 1467259631121,
+        "name": "Pupi",
+        "action": "Session",
+        "time": "2016-06-30 12:07:37"
+    },
+    {
+        "id": 1467259636256,
+        "name": "Wayde",
+        "action": "Session",
+        "time": "2016-06-30 12:07:42"
+    },
+    {
+        "id": 1467259641138,
+        "name": "Xufei",
+        "action": "Session",
+        "time": "2016-06-30 12:07:46"
+    },
+    {
+        "id": 1467259646460,
+        "name": "Kuang",
+        "action": "Session",
+        "time": "2016-06-30 12:07:52"
+    },
+    {
+        "id": 1467259649732,
+        "name": "Chintan",
+        "action": "Session",
+        "time": "2016-06-30 12:07:55"
+    },
+    {
+        "id": 1467597471942,
+        "name": "Eva",
+        "action": "Ticket",
+        "time": "2016-07-04 09:57:50"
+    },
+    {
+        "id": 1467599267505,
+        "name": "Jane",
+        "action": "NewbieGuide",
+        "time": "2016-07-04 10:27:45"
+    },
+    {
+        "id": 1467858461005,
+        "name": "Eva",
+        "action": "Session",
+        "time": "2016-07-07 10:27:41"
+    },
+    {
+        "id": 1467858466479,
+        "name": "Xufei",
+        "action": "Session",
+        "time": "2016-07-07 10:27:47"
+    },
+    {
+        "id": 1467861537744,
+        "name": "Pupi",
+        "action": "Session",
+        "time": "2016-07-07 11:18:57"
+    },
+    {
+        "id": 1468316188809,
+        "name": "Chao",
+        "action": "Ticket",
+        "time": "2016-07-12 17:36:27"
+    },
+    {
+        "id": 1468318783034,
+        "name": "Jane",
+        "action": "Retro",
+        "time": "2016-07-12 18:19:42"
+    },
+    {
+        "id": 1468478616001,
+        "name": "Wayde",
+        "action": "CycleTime",
+        "time": "2016-07-14 14:43:33"
+    },
+    {
+        "id": 1468478766008,
+        "name": "Wayde",
+        "action": "Workshop",
+        "time": "2016-07-14 14:46:03"
+    },
+    {
+        "id": 1468478780562,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-07-14 14:46:17"
+    },
+    {
+        "id": 1468809996058,
+        "name": "Wayde",
+        "action": "MingleSync",
+        "time": "2016-07-18 10:46:35"
+    },
+    {
+        "id": 1468810010612,
+        "name": "Pupi",
+        "action": "Ticket",
+        "time": "2016-07-18 10:46:51"
+    },
+    {
+        "id": 1469175472467,
+        "name": "Xufei",
+        "action": "CycleTime",
+        "time": "2016-07-22 16:17:51"
+    },
+    {
+        "id": 1469181711045,
+        "name": "Jane",
+        "action": "Session",
+        "time": "2016-07-22 18:01:49"
+    },
+    {
+        "id": 1469181719052,
+        "name": "Eva",
+        "action": "Session",
+        "time": "2016-07-22 18:01:57"
+    },
+    {
+        "id": 1469181737878,
+        "name": "Chao",
+        "action": "MingleSync",
+        "time": "2016-07-22 18:02:16"
+    },
+    {
+        "id": 1469501948267,
+        "name": "Ting",
+        "action": "Session",
+        "time": "2016-07-26 10:59:05"
+    },
+    {
+        "id": 1469503289159,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-07-26 11:21:26"
+    },
+    {
+        "id": 1469503737692,
+        "name": "Eva",
+        "action": "Session",
+        "time": "2016-07-26 11:28:55"
+    },
+    {
+        "id": 1469503742547,
+        "name": "Jane",
+        "action": "Session",
+        "time": "2016-07-26 11:29:00"
+    },
+    {
+        "id": 1469503765660,
+        "name": "Rita",
+        "action": "Ticket",
+        "time": "2016-07-26 11:29:23"
+    },
+    {
+        "id": 1469503775575,
+        "name": "Jane",
+        "action": "Ticket",
+        "time": "2016-07-26 11:29:34"
+    },
+    {
+        "id": 1469588598553,
+        "name": "Xufei",
+        "action": "Session",
+        "time": "2016-07-27 11:03:19"
+    },
+    {
+        "id": 1469588609517,
+        "name": "Ting",
+        "action": "Retro",
+        "time": "2016-07-27 11:03:30"
+    },
+    {
+        "id": 1469588709955,
+        "name": "ChenYu",
+        "action": "NewbieGuide",
+        "time": "2016-07-27 11:05:10"
+    },
+    {
+        "id": 1469687240560,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-07-28 14:27:13"
+    },
+    {
+        "id": 1469695198635,
+        "name": "Chao",
+        "action": "Session",
+        "time": "2016-07-28 16:39:56"
+    },
+    {
+        "id": 1470014757305,
+        "name": "Jane",
+        "action": "MingleSync",
+        "time": "2016-08-01 09:25:58"
+    },
+    {
+        "id": 1470016142868,
+        "name": "Jane",
+        "action": "Ticket",
+        "time": "2016-08-01 09:49:00"
+    },
+    {
+        "id": 1470016146514,
+        "name": "TianYi",
+        "action": "Ticket",
+        "time": "2016-08-01 09:49:05"
+    },
+    {
+        "id": 1470107069404,
+        "name": "Ting",
+        "action": "Session",
+        "time": "2016-08-02 11:04:25"
+    },
+    {
+        "id": 1470110235176,
+        "name": "ChenYu",
+        "action": "Session",
+        "time": "2016-08-02 11:57:13"
+    },
+    {
+        "id": 1470124526277,
+        "name": "Chao",
+        "action": "Session",
+        "time": "2016-08-02 15:55:23"
+    },
+    {
+        "id": 1470127132668,
+        "name": "Jane",
+        "action": "Session",
+        "time": "2016-08-02 16:38:42"
+    },
+    {
+        "id": 1470361446862,
+        "name": "TianYi",
+        "action": "CycleTime",
+        "time": "2016-08-05 09:44:03"
+    },
+    {
+        "id": 1470390357787,
+        "name": "TianYi",
+        "action": "NewbieGuide",
+        "time": "2016-08-05 17:45:55"
+    },
+    {
+        "id": 1470620749563,
+        "name": "Xufei",
+        "action": "Ticket",
+        "time": "2016-08-08 09:45:47"
+    },
+    {
+        "id": 1470620786032,
+        "name": "Jill",
+        "action": "MingleSync",
+        "time": "2016-08-08 09:46:24"
+    },
+    {
+        "id": 1470794648205,
+        "name": "Chao",
+        "action": "Retro",
+        "time": "2016-08-10 10:04:06"
+    },
+    {
+        "id": 1471318932779,
+        "name": "ChenYu",
+        "action": "Ticket",
+        "time": "2016-08-16 11:42:10"
+    },
+    {
+        "id": 1471318936660,
+        "name": "Chao",
+        "action": "Ticket",
+        "time": "2016-08-16 11:42:15"
+    },
+    {
+        "id": 1471318980379,
+        "name": "ChenYu",
+        "action": "MingleSync",
+        "time": "2016-08-16 11:42:58"
+    },
+    {
+        "id": 1471318989427,
+        "name": "Chao",
+        "action": "MingleSync",
+        "time": "2016-08-16 11:43:08"
+    },
+    {
+        "id": 1471319099575,
+        "name": "Ting",
+        "action": "Session",
+        "time": "2016-08-16 11:44:57"
+    },
+    {
+        "id": 1471425325634,
+        "name": "TianYi",
+        "action": "Workshop",
+        "time": "2016-08-17 17:15:21"
+    },
+    {
+        "id": 1471426403986,
+        "name": "TianYi",
+        "action": "Session",
+        "time": "2016-08-17 17:33:22"
+    },
+    {
+        "id": 1471426419357,
+        "name": "Xufei",
+        "action": "CodeReview",
+        "time": "2016-08-17 17:33:38"
+    },
+    {
+        "id": 1471510739951,
+        "name": "Wayde",
+        "action": "CycleTime",
+        "time": "2016-08-18 16:58:57"
+    },
+    {
+        "id": 1471510749705,
+        "name": "Ting",
+        "action": "Session",
+        "time": "2016-08-18 16:59:08"
+    },
+    {
+        "id": 1471917652089,
+        "name": "Eva",
+        "action": "Ticket",
+        "time": "2016-08-23 10:00:49"
+    },
+    {
+        "id": 1471917659832,
+        "name": "TianYi",
+        "action": "Ticket",
+        "time": "2016-08-23 10:00:57"
+    },
+    {
+        "id": 1471917702265,
+        "name": "Jiang",
+        "action": "MingleSync",
+        "time": "2016-08-23 10:01:39"
+    },
+    {
+        "id": 1472099667083,
+        "name": "Jane",
+        "action": "Retro",
+        "time": "2016-08-25 12:34:25"
+    },
+    {
+        "id": 1472435017951,
+        "name": "ChenYu",
+        "action": "Session",
+        "time": "2016-08-29 09:43:51"
+    },
+    {
+        "id": 1472435026042,
+        "name": "Jane",
+        "action": "MingleSync",
+        "time": "2016-08-29 09:44:00"
+    },
+    {
+        "id": 1472435040927,
+        "name": "Xufei",
+        "action": "Ticket",
+        "time": "2016-08-29 09:44:15"
+    },
+    {
+        "id": 1473042442249,
+        "name": "Eva",
+        "action": "Session",
+        "time": "2016-09-05 10:27:23"
+    },
+    {
+        "id": 1473042450827,
+        "name": "Mei",
+        "action": "Ticket",
+        "time": "2016-09-05 10:27:32"
+    },
+    {
+        "id": 1473150611726,
+        "name": "TianYi",
+        "action": "Retro",
+        "time": "2016-09-06 16:30:09"
+    },
+    {
+        "id": 1473150639396,
+        "name": "Eva",
+        "action": "Session",
+        "time": "2016-09-06 16:30:36"
+    },
+    {
+        "id": 1473730235851,
+        "name": "TianYi",
+        "action": "Session",
+        "time": "2016-09-13 09:30:34"
+    },
+    {
+        "id": 1473730238434,
+        "name": "TianYi",
+        "action": "Session",
+        "time": "2016-09-13 09:30:37"
+    },
+    {
+        "id": 1474942931732,
+        "name": "Xufei",
+        "action": "Session",
+        "time": "2016-09-27 10:22:10"
+    },
+    {
+        "id": 1474942934759,
+        "name": "Xufei",
+        "action": "Session",
+        "time": "2016-09-27 10:22:13"
+    },
+    {
+        "id": 1474943481369,
+        "name": "TianYi",
+        "action": "CodeReview",
+        "time": "2016-09-27 10:31:19"
+    },
+    {
+        "id": 1474943483856,
+        "name": "TianYi",
+        "action": "CodeReview",
+        "time": "2016-09-27 10:31:22"
+    },
+    {
+        "id": 1474943514372,
+        "name": "Mei",
+        "action": "Ticket",
+        "time": "2016-09-27 10:31:52"
+    },
+    {
+        "id": 1474943540150,
+        "name": "Mei",
+        "action": "Session",
+        "time": "2016-09-27 10:32:18"
+    },
+    {
+        "id": 1474943550734,
+        "name": "Mei",
+        "action": "Session",
+        "time": "2016-09-27 10:32:28"
+    },
+    {
+        "id": 1474943927271,
+        "name": "Jill",
+        "action": "Retro",
+        "time": "2016-09-27 10:38:44"
+    }
 ]
